@@ -1,0 +1,104 @@
+#calendar {
+  width: 66%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#calendar #app-name-portrait {
+  display: none;
+}
+
+#calendar #theme-portrait {
+  display: none;
+  padding: 1.8vh 4.2vh;
+  background-color: #1b19cd;
+  color: #FEFDFD;
+  border: 3px solid #FEFDFD;
+  font-size: 2.4vh;
+}
+
+}
+
+#calendar thead tr:first-child th div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#calendar h4 {
+  margin: 0;
+  padding: 0.8vw 0 0.2vw;
+  font-size: 1.4vw;
+  font-weight: 300;
+}
+
+#calendar h3 {
+  margin: 0;
+  padding: 0 2vw;
+  font-size: 2vw;
+  font-weight: 700;
+  display: inline-block;
+}
+
+#calendar .weekday {
+  font-size: 1.7vw;
+  font-weight: 300;
+  padding: 8px 0 5px;
+  border-bottom: 1px solid white !important;
+}
+
+#calendar .icon { font-size: 1.2vw; }
+
+#calendar .icon:hover { opacity: 0.6; }
+
+#calendar tbody td {
+  height: 5.2vw;
+  width: 5.2vw;
+  font-size: 0.8vw;
+  font-weight: 600;
+  vertical-align: top;
+  padding: 0.5vw;
+  transition: font-size .6s ease;
+}
+
+#calendar tbody td:hover {
+  font-size:  1.2vw;
+}
+
+#calendar #current-day{
+  background-color:#e1e1e1;
+}
+
+#calendar img{
+  width:3.8vw;
+  vertical-align: top;
+  position: relative;
+  top: 0.5vw;
+}
+
+.tooltip span{
+ display:none;
+}
+
+.tooltip:hover{
+ cursor: help;
+ position: relative;
+}
+
+.tooltip:hover span{
+  display: block;
+  font-size: 1vw;
+  padding: 6px;
+  white-space: pre-wrap;
+  width: 12vw;
+  z-index: 100;
+  background-color: #ededed;
+  color: black;
+  border-radius: 6px;
+  position: absolute;
+  left: 2vw;
+  top: 4vw;
+}

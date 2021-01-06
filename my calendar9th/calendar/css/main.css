@@ -1,0 +1,80 @@
+body{
+font-family: 'Josefin Sans', sans-serif;
+margin:0px;
+display:flex;
+align-item:stretch;
+}
+
+table, td, th{
+    border: 1px solid #232323;
+  }
+
+table {
+    margin: 14px auto;
+    padding: 7vh 0;
+    border-collapse: collapse;
+  }
+
+  sup{
+    font-size: 50%;
+  }
+
+    .color{
+    color:#fefdfd;
+    background-color:#1b19cd;
+    }
+
+    .center{
+    text-align:center;
+    }
+
+    .default-cursor{
+    cursor:default;
+    }
+
+    .off-color{
+    color:#7c7efb;
+    }
+
+    .font{
+    font-family:'Josefin Sans', sans-serif;
+    }
+
+    .button{
+    border-radius: 500px;
+    outline: none;
+    margin:0 auto 0;
+    background-color: transparent;
+    }
+
+    .border-color{
+    border-color:#1b19cd;
+    }
+
+    #calendar tbody tr td[class*="color"]{
+      border-right:1px solid white;
+    }
+
+    #calendar tbody tr td[class*="color"]:first-child{
+      border-left-color: inherit;
+    }
+
+    #calendar tbody tr td[class*="color"]:last-child{
+      border-right-color:inherit;
+    }
+
+    #calendar tbody tr:last-child td[class*="color"]{
+      border-bottom-color:inherit;
+    }
+
+    #calendar tbody tr:nth-child(5) td[class*="color"]{
+      border-bottom-color:white;
+    }
+
+    #calendar tbody .pre-month-lastday:not(:last-child){
+      border-right: 1px solid black; !important;
+    }
+
+    /*#calendar tbody .pre-month-last-day:not(:last-child) {
+         border-right: 1px solid black; !important;
+     }*/

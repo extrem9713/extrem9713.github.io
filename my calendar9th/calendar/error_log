@@ -1,0 +1,67 @@
+[07-Aug-2019 04:39:32 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:39:43 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:42:54 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:42:55 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:42:56 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:44:20 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:44:28 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:44:29 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:38 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:40 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:42 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:43 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:43 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:43 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:44 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:47:44 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:48:54 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:48:55 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:48:57 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:48:58 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:48:59 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:49:00 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 04:56:12 UTC] PHP Warning:  mysqli_connect(): (HY000/1045): Access denied for user 'user'@'localhost' (using password: YES) in /home/wda1907/public_html/my calendar9th/index.php on line 27
+[07-Aug-2019 04:57:01 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'wda1907_extrem'@'localhost' to database 'wda1907_calendar' in /home/wda1907/public_html/my calendar9th/index.php on line 27
+[07-Aug-2019 04:57:02 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'wda1907_extrem'@'localhost' to database 'wda1907_calendar' in /home/wda1907/public_html/my calendar9th/index.php on line 27
+[07-Aug-2019 04:57:05 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'wda1907_extrem'@'localhost' to database 'wda1907_calendar' in /home/wda1907/public_html/my calendar9th/index.php on line 27
+[07-Aug-2019 04:57:07 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'wda1907_extrem'@'localhost' to database 'wda1907_calendar' in /home/wda1907/public_html/my calendar9th/index.php on line 27
+[07-Aug-2019 04:59:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'wda1907_test'@'localhost' to database 'wda1907_calendar' in /home/wda1907/public_html/my calendar9th/index.php on line 27
+[07-Aug-2019 04:59:56 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'wda1907_test'@'localhost' to database 'wda1907_calendar' in /home/wda1907/public_html/my calendar9th/index.php on line 27
+[07-Aug-2019 05:21:45 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:21:46 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:21:46 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:21:47 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:21:47 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:21:47 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:22:21 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:22:24 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:26:20 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:27:28 UTC] PHP Parse error:  syntax error, unexpected 'theme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 33
+[07-Aug-2019 05:30:19 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 05:30:20 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 05:30:20 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 05:30:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 05:30:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 05:31:20 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 05:31:21 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 05:31:23 UTC] PHP Parse error:  syntax error, unexpected '}' in /home/wda1907/public_html/my calendar9th/index.php on line 41
+[07-Aug-2019 06:40:47 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:47 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:48 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:48 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:48 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:49 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:49 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:50 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:40:51 UTC] PHP Parse error:  syntax error, unexpected 'setTheme' (T_STRING) in /home/wda1907/public_html/my calendar9th/index.php on line 43
+[07-Aug-2019 06:44:25 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:26 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:39 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:45 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:45 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:46 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:46 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:46 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:44:46 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 55
+[07-Aug-2019 06:49:55 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 54
+[07-Aug-2019 06:51:45 UTC] PHP Parse error:  syntax error, unexpected '=' in /home/wda1907/public_html/my calendar9th/index.php on line 54
