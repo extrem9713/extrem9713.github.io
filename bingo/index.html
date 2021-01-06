@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1 srink-to-fit=no">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="icon" href="Bingo-icon.png" type="image/png" sizes="72x72">
+    <title>bingo</title>
+</head>
+<style>
+body{
+   background: url('background.jpeg');
+   background-repeat: no-repeat;
+   background-size: cover;
+
+}
+.bingoball{
+    width:4vw;
+    height:12vh;
+    float:left;
+    display:block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    background-image: url('ball.png');
+    background-repeat: no-repeat;
+    color: whitesmoke;
+    font-weight: bold;
+    line-height: 8vh;
+    font-size: 1.5vw;
+
+    cursor: pointer;
+}
+#bingo-setting{
+    background-image: url('back-side.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+}
+#bingo-area{
+    background: url('back-1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+}
+#bingo-content{
+    margin-top: 10vh;
+}
+#content{
+    margin-top:16vh;
+}
+@media(orientation: portrait){
+    body{
+        padding: 0px;
+        margin: 0px;
+        background: #006935;
+    }
+    #bingo-setting{
+        height: 42vh;
+
+    }
+    #bingo-area{
+        background-image: url('back-p.png');
+        height: 58vh;
+    }
+    #bingo-content{
+      margin-top: 0vh;
+    }
+    #content{
+        margin-top: 8vh;
+    }
+    .bingoball{
+        width: 26vw;
+        height: 16vh;
+        font-size: 13vw;
+        line-height: 14vh;
+        margin-left:3vw;
+
+    }
+
+}
+</style>
+<body>
+    <div id="bingo-content" class="container">
+    <div class="row" style="height:600px;">
+        <div id="bingo-area" class="col-12 col-lg-9 order-2 order-lg-1">
+            <div v-for="item in numlist"  class="bingoball" title="點一下刪除" v-on:click="removeball(item);">
+                <span v-if="lastball == item">{{displaynumber01}}</span>
+                <span v-else>{{item}}</span>
+            </div>
+        </div>
+        <div id="bingo-setting" class="col-12 col-lg-3 order-1 order-lg-2">
+            <div id="content">
+                <div v-if="manualmode" class="input-group input-group-sm">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text">號碼:</span>
+                    </div>
+                    <input v-model="valueinput" type="text" maxlength="2" class="form-control">
+                    <br>
+                    <input type="button" class="btn btn-warning btn-sm" v-on:click="addball();" value="輸入彩球">
+                </div>
+                <div  v-if="autoinput" style="margin-top:5%">
+                    <input v-if="ranstartbtn" v-on:click="randomvalue();" type="button" class="btn btn-info btn-sm" value="產生彩球">
+                    <input v-if="ranendbtn" v-on:click="stopanimate();" type="button" class="btn btn-danger btn-sm" value="停止產生">
+                </div>
+                <p v-if="enballcount" style="margin-top: 1vh;">目前開出彩球個數:<span>{{ballcount}}</span></p>
+            </div>
+            <div v-if="setrange" class="input-group input-group-sm" style="margin-top: 10px;margin-left: 3vw;">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">範圍:1~</span>
+                </div>
+                <input v-model="rangemax" type="text"  maxlength="2" style="width: 50px;">
+            </div>
+            <div v-if="setmode" class="input-group input-group-sm" style="margin-top: 10px;margin-left: 3vw;">
+                <div class="input-group-prpend">
+                    <span class="input-group-text">模式:</span>
+                </div>
+                <select v-model="selmode" v-on:change="setmodechange();">
+                    <option value="0">手動輸入</option>
+                    <option value="1">自動輸入</option>
+                </select>
+            </div>
+            <div v-if="autosetting" class="input-group input-group-sm" style="margin-top: 10px;margin-left: 3vw;">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">停止方式:</span>
+                </div>
+                <select v-model="stopmode" v-on:change="stopmodechange();">
+                    <option value="0">手動停止</option>
+                    <option value="1">自動停止</option>
+                </select>
+            </div>
+
+            <div  v-if="setanimatetime" class="input-group input-group-sm" style="margin-top: 10px;margin-left: 3vw;">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">動畫長度:
+                        <input v-model="animatetime" class="form-control" type="number" min="1" maxlength="2" value="1" style="width: 75px;">秒</span>
+                </div>
+            </div>
+            <div v-if="rightbtn" style="margin-top:10px;">
+                <input v-on:click="set();" type="button" class="btn btn-primary btn-sm" value="確定">
+            </div>
+            <input v-if="newgame" v-on:click="reload();" type="button" class="btn btn-danger btn-sm" value="開始新遊戲">
+        </div>
+
+    </div>
+    </div>
+
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+
+        <script language="javascript">
+            new Vue({
+                el:"#bingo-content",
+                data:{
+                    numlist:[],
+                    setrange:true,
+                    rangemax:43,
+                    setmode:true,
+                    selmode:0,
+                    autosetting:false,
+                    stopmode:0,
+                    setanimatetime:false,
+                    animatetime:1,
+                    rightbtn:true,
+                    manualmode:false,
+                    valueinput:"",
+                    autoinput:false,
+                    ranstartbtn:true,
+                    ranendbtn:false,
+                    enballcount:false,
+                    newgame:false,
+                    nrange:0,
+                    ballcount:0,
+                    temvar:0,
+                    running:false,
+                    lastball:null
+                },
+                methods:{
+                    stopmodechange:function(){
+                        return(this.stopmode=="0"?this.setanimatetime=false:this.setanimatetime=true);
+                    },
+                    setmodechange:function(){
+                        return(this.selmode=="0"?this.autosetting=false:this.autosetting=true);
+                    },
+                    set:function(){
+                      this.nrange=parseInt(this.rangemax,10);
+                      if(isNaN(this.nrange)){
+                          this.nrange=43;
+                      }
+                      if(! this.autosetting){
+                          this.manualmode=true;
+                          this.enballcount=true;
+                          this.newgame=true;
+                      }
+                      else{
+                          this.autoinput=true;
+                          this.manualmode=false;
+                          this.enballcount=true;
+                          this.newgame=true;
+                          if(this.stopmode=="1"){
+                              this.autostop=true;
+                              this.ranendbtn=false;
+                              this.animatetime=parseInt(this.animatetime,10);
+                              if(isNaN(this.animatetime)){
+                                  this.animatetime=1;
+                              }
+                          }
+                      }
+                      this.setrange=false;
+                      this.setmode=false;
+                      this.autosetting=false;
+                      this.setanimatetime=false;
+                      this.rightbtn=false;
+
+                    },
+                    addball:function(){
+                        if(this.manualmode){
+                            if(this.chknumber(this.valueinput)){
+                                svalue=this.valueinput;
+                                this.valueinput="";
+                            }else{
+                                alert("輸入錯誤或輸入大於範圍的數字!");
+                                return false;
+                            }
+                        }else{
+                            svalue=this.setrandnumber();
+                            this.running=true;
+                        }
+                        this.numlist.push(svalue);
+                        this.ballcount=this.numlist.length;
+                        this.lastball=this.numlist[this.numlist.length-1];
+
+                        return true;
+                    },
+                    chknumber:function(newball){
+                        if(newball > 0 && newball <= this.nrange)  {
+                            if(this.numlist.indexOf(newball) == -1){
+                                return true;
+                            }
+                        }   else return false;
+                    },
+                    setrandnumber:function(){
+                        ninput=Math.ceil(Math.random()*this.nrange);
+                        if(this.numlist.length > 0){
+                            while(this.numlist.indexOf(ninput) != -1){
+                                ninput=Math.ceil(Math.random()*this.nrange);
+                            }
+                        }
+                        return ninput;
+                    },
+                    removeball:function(item){
+                        numindex=this.numlist.indexOf(item);
+                        this.numlist.splice(numindex,1);
+                        this.ballcount=this.numlist.length;
+                    },
+                    reload:function(){
+                        if(confirm("是否重新開始一局新遊戲?")){
+                            this.numlist=null;
+                            window.location=window.location;
+                        }
+                    },
+                    randomvalue:function(){
+                        this.ranstartbtn=false;
+                        if(!this.addball()){
+                            return false;
+                        }
+                        if(this.autostop){
+                            setTimeout(()=>{
+                                this.running=false;
+                                this.ranstartbtn=true;
+                            },this.animatetime*1000);
+                        }
+                        else{
+                            this.ranendbtn=true;
+                        }
+                    },
+                    stopanimate:function(){
+                        this.ranstartbtn=true;
+                        this.ranendbtn=false;
+                        this.ballcount=this.numlist.length;
+                        this.running=false;
+                    }
+                },
+                computed: {
+                    displaynumber01:{
+                        get(){
+                            clearInterval(this.randanimate);
+                            if(this.running){
+                                this.randanimate=window.setInterval(function(){
+                                    this.temvar=this.setrandnumber();
+                                }.bind(this),10);
+                                return (this.temvar);
+                            }else{
+                                return (this.lastball);
+                            }
+                        },
+                    }
+                },
+            })
+        </script>
+</body>
+</html>

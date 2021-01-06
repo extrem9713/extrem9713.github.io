@@ -1,0 +1,3 @@
+[1022/205050.895:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1022/205817.500:ERROR:crash_report_database_win.cc(428)] unexpected header
+[1126/150015.835:ERROR:directory_reader_win.cc(43)] FindFirstFile: 系統找不到指定的路徑。 (0x3)
