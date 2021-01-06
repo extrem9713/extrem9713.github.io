@@ -1,0 +1,126 @@
+dialog {
+  width: 100%;
+  height: 100%;
+  border: none;
+  padding: 0;
+  background-color: rgba(29, 29, 29, 0.85);
+  position: fixed;
+}
+
+.popup {
+  position: static;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+  margin: 22vh auto 0;
+  background-color: #fefdfd;
+  border-radius: 10px;
+}
+
+#fav-color h4 {
+  margin: 32px 0 18px;
+  padding: 0 2vw 2px;
+  font-size: calc(12px + 1.6vw);
+  font-weight: 300;
+  border-bottom: 1px solid #222;
+}
+
+#fav-color #color-options {
+  width: 84%;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#fav-color #color-options h5 {
+  display: inline;
+  margin: 8px 0 12px;
+  font-size: calc(6px + 0.6vw);
+  font-weight: 500;
+}
+
+#fav-color #color-options .color-option {
+  margin: 0.4vw;
+  width: 4.5vw;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#fav-color #color-options .color-preview {
+  width: calc(16px + 1.7vw);
+  height: calc(16px + 1.7vw);
+  padding: 0;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+  clip-path: polygon(0% 15%, 15% 15%, 15% 0%, 85% 0%, 85% 15%, 100% 15%, 100% 85%, 85% 85%, 85% 100%, 15% 100%, 15% 85%, 0% 85%);
+}
+
+#fav-color #color-options .checkmark{
+  color: white;
+  font-size: 1.8vw;
+}
+
+#fav-color #update-theme-button {
+  margin: 24px 0 20px;
+  padding: 10px 26px;
+  font-size: calc(8px + 0.6vw);
+  font-weight: 400;
+  border: 3px solid #222;
+}
+
+#fav-color #update-theme-button:hover {
+  color: white;
+  background-color: #222;
+}
+
+#make-note h4{
+  margin: 32px 0 18px;
+  font-size: calc(16px + 1.6vw);
+  font-weight: 300;
+}
+
+#make-note #edit-post-it{
+  height: 340px;
+  width: 42vw;
+  font-size: 2.6vw;
+  padding: 14px;
+  border: 1px solid #d8d8d8;
+  border-radius: 10px;
+  outline: none;
+  resize: none;
+}
+
+#make-note .post-it-button{
+  display: inline;
+  margin: 24px 0 20px;
+  padding: 10px 26px;
+  font-size: calc(12px + 0.6vw);
+  font-weight: 400;
+}
+
+#make-note #add-post-it{
+  border: 3px solid #222;
+}
+
+#make-note #add-post-it:hover{
+  color: white;
+  background-color: #222;
+}
+
+#make-note #delete-button{
+  border: 3px solid #dc171f ;
+  background-color: #dc171f;
+  color: white;
+}
+
+#make-note #delete-button:hover{
+  background-color: white;
+  color: #dc171f;
+}
