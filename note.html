@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="images\doggie.png" type="image/png" sizes="72x72">
+  <title>小筆記</title>
+</head>
+<body style="background-color:#ffffcc">
+  <center>
+  <h2><b><span style="font-family:DFkai-sb">我的小筆記</b></h2>
+  </center>
+    <hr><pre><ol><li>背景顏色:在body處輸入 span style="background-color:顏色"</li>
+    <li>字型:span style="font-family:字型代碼"(EX.serif DFkai-sb標楷體);color:顏色
+<span style="font-family:serif;color:blue">我是serif字體</span style>
+<span style="font-family:DFkai-sb;color:red">我是標楷體</span style>
+*Atom也可以設定字型套用的優先順序,如果第一個套用失敗會套用第二個
+span style="font-family:第一順位字型,第二順位字型,....依此類推"
+    </li>
+      <li>超連結:a href="連結路徑" target="_blank(開啟新視窗)">要超連結的文字或圖<</li>
+    <li>插入圖片:img src="圖片路徑" alt="圖片失效時出現的替代文字" width="寬度"
+    <img src="images\dogy.jpg"alt="放假做什麼好"  width="100"></li>
+    <li>停在圖上跳對話視窗:img src="圖片路徑" alt="圖片失效時出現的替代文字" onmouseover="alert('視窗中的文字')/"
+    <img src="images\dogy.jpg"alt="放假做什麼好"  width="100" onmouseover="alert('當然是睡覺阿!')"/>  </li>
+點擊圖片跳對話視窗:img src="圖片路徑" alt="圖片失效時出現的替代文字" onmousedown="alert('視窗中的文字')/"
+    <img src="images\dogy.jpg"alt="放假做什麼好"  width="100" onmousedown="alert('當然是睡覺阿!')"/>  </li>
+    <li>跑馬燈:marquee behavior="scroll、slide、alternate" scrollamount="速度" 跑馬燈文字 </li>
+    <marquee behavior="alternate"color:green scrollamount="15">我是跑馬燈</marquee>
+    <li>div排版區塊單位:
+    框框:div span style="border:框線粗細 顏色 solid"
+    <div span style="border:5px brown solid">我有框框</div>
+    顏色背景:div span style="background-color:顏色"</li>
+    <div span style="background-color:pink">我有背景</div>
+    兩個語法可一起用
+    <div span style="background-color:pink"><div span style="border:5px brown solid">我兩個都有</div></div>
+    <li>插入背景音樂:audio src="音樂路徑" autoplay(自動播放) loop(無限循環) (chrome無法撥放? IE跟Edge正常)</li>
+    <audio src="music\Nobody's a nobody.mp3" autoplay></audio>
+    <li>網站的icon:link rel=在head區輸入"icon" href="圖片路徑" type="image/png"(檔案類型?) sizes="?x?"
+    </li>
+    <li>表格:table
+    <table border="1">
+      <thead>
+      <tr>
+    <th colspan="4">測試的表格
+    </th>
+      </tr>
+      </thead>
+      <tbody>
+        <tr>
+        <th>有沒有吃</th>
+        <th>早餐</th>
+        <th>午餐</th>
+        <th>晚餐</th>
+        </tr>
+        <tr>
+          <th>星期一</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>星期二</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>星期三</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>星期四</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>星期五</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>星期六</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <th>星期日</th>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+    </li>
+    </pre>
+</ol>
+  <center>
+<a href="indexdog.html">回首頁</a>
+  </center>
+</body>
+</html>

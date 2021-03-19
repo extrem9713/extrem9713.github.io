@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/indexdog.css">
+  <link rel="stylesheet" href="css/animation-cheat-sheet.css">
+  <link rel="stylesheet" href="css/portrait.css">
+  <link rel="stylesheet" href="swiper/dist/css/swiper.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Just+Another+Hand" rel="stylesheet">
+  <link rel="icon" href="images/doggie.png" type="image/png" sizes="72x72">
+  <title>泰名的網頁</title>
+  </head>
+<style media="screen">
+
+</style>
+<script src="javascript/javascript.js" charset="utf-8"></script>
+
+<body>
+<div id="top">
+  <pre class="default-cursor"><span style="font-size:3.5vw; weight:250;  font-family:dfkai-sb; color:#fffff0;" class="shadow fadeIn"> 泰名的     舔狗網</span></pre>
+
+</div>
+<div id="left">
+    <div id="bone">
+      <div  class="slideRight"><a href="atom_tutorial.html" target="_blank"><img src="images/bone-atomT.png"></a></div>
+
+    <div  class="slideLeft"><a href="note.html"><img src="images/bone-note.png"></a></div>
+
+    <div  class="slideRight"><a href="calendarwork.html" target="_blank"><img src="images/bone-calendar.png"></a></div>
+
+    <div  class="slideLeft finger-cursor"><img src="images/bone-number.png" onclick="numbergame()"></div>
+
+    <div  class="slideRight"><a href="lotto.html" target="_blank"><img src="images/bone-lotto.png"></a></div>
+
+    <div  class="slideLeft"><a href="https://codepen.io/" target="_blank"><img src="images/bone-codepen.png"></a></div>
+
+    <div  class="slideRight"><a href="eat/index.html" target="_blank"><img src="images/bone-eat.png"></a></div>
+
+
+  </div>
+  <br>
+    <div id="meatball" class="tooltip">
+      <img src="images/meatball.png" alt="肉球" class="tossing">
+      <span>好 想 聞</span>
+  </div>
+</div>
+<div id="main">
+  <div id="imageshow" class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="images/shiba1.jpg"></div>
+          <div class="swiper-slide"><img src="images/shiba2.jpg"></div>
+          <div class="swiper-slide"><img src="images/shiba3.jpeg"></div>
+          <div class="swiper-slide"><img src="images/shiba4.jpg"></div>
+          <div class="swiper-slide"><img src="images/shiba5.png"></div>
+      </div>
+      <!--分页器 -->
+      <div id="pagination" class="swiper-pagination"></div>
+      <!--箭頭-->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+
+
+  <div id="update">
+   <p class="roltatechanc">更新內容:</p>
+     <ul>
+       <li class="li-in-1">2019/7/28 更新訂餐系統 V1.4</li>
+      <li class="li-in-1">2019/6/25 網頁內容更新</li>
+      <li class="li-in-2">2019/6/19 更新首頁</li>
+      <li class="li-in-3">2019/6/18 更新RWD</li>
+      <li class="li-in-4">2019/6/08 更新動態效果與標題美化</li>
+     </ul>
+    </div>
+    </div>
+    <div id="sub" class="colorchanging">
+      <div id="maddog">  <img src="images/maddog.png" alt="呵呵" onmouseover="alert('呵呵')"></div>
+      <div id="showbox"></div>
+  </div>
+<audio src="music/dog ending credit song.mp3" autoplay loop>
+  <script src="swiper/dist/js/swiper.min.js"></script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop:true,
+      autoplay: {
+        delay: 4000,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+</body>
+</html>

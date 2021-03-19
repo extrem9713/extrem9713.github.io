@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lotto</title>
+</head>
+<style media="screen">
+body{
+  text-align:center;
+  font-family:dfkai-sb;
+  background-color:#f6e178;
+}
+ #lotto table{
+   margin:0px auto;
+   width:75%;
+   background-color:#fff1d0;
+ }
+   #lotto table,tr,th,td{
+    border:1px solid;
+  }
+  #lotto #numrender{
+    font-family:dfkai-sb;
+  }
+
+</style>
+<script type="text/javascript">
+  var numnamearray=Array("num01","num02","num03","num04","num05","num06","num07");
+  var numarray=Array(0,0,0,0,0,0,0);
+  function numrender(){
+    for(i=0;i<=7;i++){
+     num=Math.floor(Math.random()*49+1)
+     //indexOf會尋找目標 原始位置為0 -1為找不到目標
+     if(numarray.indexOf(num)>0){
+       i=i-1;
+       continue;
+      }
+      else{
+        numarray[i]=num;
+      }
+    }
+    setnumber();
+  }
+
+
+  function setnumber(){
+   for(i=0;i<=7;i++){
+    document.getElementById(numnamearray[i]).value=numarray[i];
+   }
+  }
+</script>
+<body>
+  <div id="lotto">
+    <h2>樂透號碼產生器</h2>
+    <table>
+      <thead>
+        <tr id="name">
+          <th>號碼1</th>
+          <th>號碼2</th>
+          <th>號碼3</th>
+          <th>號碼4</th>
+          <th>號碼5</th>
+          <th>號碼6</th>
+          <th>特別號</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <input type="text" name="num01" id="num01" size="2" maxlength="2"></td>
+          <td>
+            <input type="text" name="num02" id="num02" size="2" maxlength="2">
+          </td>
+          <td>
+            <input type="text" name="num03" id="num03" size="2" maxlength="2">
+          </td>
+          <td>
+            <input type="text" name="num04" id="num04" size="2" maxlength="2">
+          </td>
+          <td>
+            <input type="text" name="num05" id="num05" size="2" maxlength="2">
+          </td>
+          <td>
+            <input type="text" name="num06" id="num06" size="2" maxlength="2">
+          </td>
+          <td>
+            <input type="text" name="num07" id="num07" size="2" maxlength="2">
+          </td>
+        </tr>
+        <tr>
+          <td colspan="7"><input type="submit" name="numrender" id="numrender" value="產生號碼" onclick="numrender()"></td>
+        </tr>
+      </tbody>
+    </table>
+    <h3>*不重複方法尚在研究中</h3>
+  </div>
+  <audio src="music/gameble master.mp3" loop autoplay>;
+
+  </audio>
+</body>
+</html>
