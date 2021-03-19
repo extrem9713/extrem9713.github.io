@@ -1,0 +1,85 @@
+body{
+font-family: 'Just Another Hand', DFkai-sb;
+}
+.tooltip span{
+display:none;
+}
+.tooltip:hover span {
+  display: block;
+  font-size: 1vw;
+  padding: 0px;
+  white-space: pre-wrap;
+    z-index: 100;
+  background-color: #EDEDED;
+  color: black;
+  border-radius: 6px;
+  width: 20vw;
+    top: 4vw;
+    left:4vw;
+  position: bottom;
+}
+.mouseshape:hover{
+cursor:help;
+}
+#top{
+background-color:#A8E364;
+color:white;  font-size: 3.5vw;
+font-weight: 250;
+padding:1px 0px;
+text-align: center;
+}
+#left{
+  background-color:#ffffcc;
+  font-size: 2vw;
+  width:20%;
+  height:80vw;
+  text-align:center;
+  float: left;
+}
+#left img{
+width:5vw;
+position:relative;
+}
+#main{
+float:left;
+height:80vw;
+width:80%;
+}
+#dog{
+background-color:pink;
+background-repeat:repeat-x;
+height:50vw;
+text-align: center;
+}
+#dog img{
+width:50vw;
+transition:
+width 5s ease;
+}
+#dog img:hover{
+width:89vw
+}
+#marq{
+background-color:#6F5858;
+height:5vw;
+}
+#marq pre{
+font-family: 'Just Another Hand', DFkai-sb;
+font-size:4.5vw;
+padding:0px;
+margin:0px;
+}
+#update{
+background-color: grey;
+height:25vw;
+}
+#sub{
+background-color:#73ADC3;
+height:85vw;
+text-align: center;
+}
+#sub img{
+width:5vw;
+position;relative;
+
+}

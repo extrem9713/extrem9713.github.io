@@ -1,0 +1,50 @@
+body {
+  font-family: 'Pacifico', cursive;
+  margin: 0;
+  background-color: #FEFDFD;
+  display : flex;;
+  align-items: stretch;
+}
+table, td, th{
+      border: 1px solid #232323;
+    }
+
+    table {
+      margin: 14px auto;
+      padding: 7vh 0;
+      border-collapse: collapse;
+
+    }
+    dialog {
+      height: 100%;
+      width: 100%;
+      border: none;
+      padding: 0;
+      background-color: rgba(29, 29, 29, 0.85);
+      position: fixed;
+    }
+.font {
+  font-family: 'Pacifico', cursive;
+}
+.default-cusor {
+  cursor: default;
+}
+.center {
+  text-align: center;
+}
+.button{
+  border-radius: 500px;
+  outline: none;
+  margin: 0 auto;
+  background-color: Transparent;
+}
+.color {
+  color: #FEFDFD;
+  background-color: #1B19CD;
+}
+.border-color{
+  border-color:  #1B19CD;
+}
+.off-color {
+  color: #7c7EFB;
+}

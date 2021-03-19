@@ -1,0 +1,87 @@
+@media (orientation:portrait) {
+  body{
+    background-color: #fbceb5;
+  }
+
+
+
+  #top{
+    width: 100%;
+    height: 5vh;
+    background-color: #bbe77a;
+    background-image: url('../images/marutaro.png');
+    background-repeat: no-repeat;
+    background-size: 30vw;
+    background-position: 50% -10%;
+  }
+
+  #top pre{
+    margin-top: 1vw;
+  }
+
+  #left{
+    float: none;
+    width: auto;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #left #bone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+  }
+
+  #left #bone div{
+    margin-left:2vw;
+  }
+
+  #left #bone div img{
+    height: 4vh;
+    width: 12vw;
+  }
+
+  #meatball{
+    display: none;
+  }
+
+  #main{
+    float: none;
+    width: 100%;
+    height: 80vh;
+  }
+
+  #imageshow{
+    height: 58vh;
+  }
+
+  .swiper-container img{
+    width: 60%;
+    height: 48vh;
+    margin-top: 1.5vw;
+  }
+  #pagination{
+    margin-top: 8vw;
+  }
+
+  #update{
+    width: 100%;
+    height: 25vh;
+  }
+
+  #update p{
+    font-size: 4vw;
+  }
+
+  #update li{
+    font-size: 3.5vw;
+  }
+
+  #sub{
+    width: 100%;
+    height: 5vh;
+  }
+
+}
