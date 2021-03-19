@@ -1,0 +1,24 @@
+#red-b{
+  width: 80vw;
+  height: 50vh;
+  background-image: url('../images/bake-p.png');
+  background-color: #f5f5f5;
+  background-repeat: no-repeat;
+  background-position: 80% 140%;
+
+  background-size: auto;
+}
+
+#red-b h4{
+ font-size:calc(6px + 0.8vw);
+ margin-left: 1vw;
+ line-height: 1.5em
+ white-space:pre-wrap;
+}
+
+#red-b h5{
+ font-size:calc(6px + 0.8vw);
+ margin-left: 1vw;
+ line-height: 1em;
+ white-space:pre-wrap;
+}

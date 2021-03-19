@@ -1,0 +1,241 @@
+body{
+  font-family: 'Indie Flower', cursive,dfkai-sb;
+  background-image:url("../images/food-bg.jpg");
+  background-repeat:no-repeat;
+  margin:0px;
+}
+
+.font{
+  font-family: 'Indie Flower', cursive,dfkai-sb;
+}
+
+
+dialog{
+background-color:rgba(29,29,29,0.5);
+padding:0px;
+width:100%;
+height:100%;
+border:none;
+position:fixed;
+}
+
+.popup{
+position:static;
+background-color:white;
+width:60vw;
+height:82vh;
+margin:10vh auto;
+border-radius:8px;
+cursor: default;
+}
+
+#lunch h3{
+font-size: calc(25px + 1.6vw);
+text-align:center;
+margin-left:15vw;
+margin-right:15vw;
+border-bottom:1px solid #aaa;
+}
+
+#lunch h2{
+font-size: calc(10px + 1vw);
+margin-left: 5vw;
+margin-top: 1vh;
+
+}
+
+.swiper-container{
+width: 60vw;
+height:50vh;
+}
+
+
+
+#lunch .meal-options{
+padding:0px;
+display:flex;
+flex-direction:row;
+flex-wrap: wrap;
+justify-content: flex-start;
+
+}
+
+#lunch .meal-options .meal-option{
+
+width:32vw;
+height: 5vh;
+text-align:center;
+display: flex;
+flex-direction: row;
+align-items: center;
+
+}
+
+marquee{
+  width: 100%;
+  height: 2.5vh;
+  padding: 0px;
+  margin: 0px;
+}
+
+.meal-pic{
+width:2vw;
+height:2vw;
+margin-bottom:0vw;
+margin-left: 5vw;
+padding:0;
+border-radius:50px;
+display:flex;
+align-items:center;
+justify-content:center;
+}
+
+.meal-pic:hover{
+  filter: brightness(0.7);
+}
+
+.meal-selection{
+  display: flex;
+  width: 32vw;
+  height: 7vh;
+  margin-left: 20vw;
+  margin-top: 5vh;
+
+}
+
+.meal-type{
+  width:32vw;
+  height: 7vh;
+  text-align:center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  }
+
+
+.type{
+  width: 3vw;
+  height: 3vh;
+  border-radius: 50px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+#selection-mode{
+  display: flex;
+  width: 20vw;
+  height: 5vh;
+  margin-left: 20vw;
+  margin-top: 5vh;
+}
+.button{
+  border:none;
+  background-color: #ff6347;
+    font-family: 'Indie Flower', cursive,dfkai-sb;
+    color: white;
+    line-height: 1em;
+    border-radius: 10px;
+}
+
+.button:hover{
+  filter: brightness(0.7);
+}
+
+h4{
+ font-size:calc(6px + 1vw);
+ margin-left: 0.5vw;
+
+ white-space:pre-wrap;
+}
+
+.type:hover{
+  filter: brightness(0.7);
+}
+
+.type-check{
+  color: white;
+  font-size: 1vw;
+}
+
+
+.swiper-button-next{
+  opacity:0.1;
+}
+
+.swiper-button-next:hover{
+  opacity:0.5;
+}
+
+.swiper-button-prev{
+opacity:0.1;
+}
+
+.swiper-button-prev:hover{
+opacity:0.5;
+}
+
+
+
+.sendpic{
+  width: 8vw;
+  height: 5vh;
+}
+
+#submit-meal #send img:hover{
+  cursor: pointer;
+  filter:brightness(0.8);
+}
+
+
+
+#submit-meal{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+
+#submit-meal h2{
+margin-top:1vw;
+margin-right: 1vh;
+font-size:calc(10px + 1vw);
+}
+
+#submit-meal #order{
+width: 20vw;
+height: 4vh;
+font-size: calc(10px + 1vw);
+margin-right:1vw;
+overflow: hidden;
+outline: none;
+resize: none;
+}
+
+#submit-meal  p{
+  margin-left: 1vw;
+}
+
+#submit-meal  pre{
+  margin-left: 1vw;
+}
+
+.meal-pic .checkmark{
+color:white;
+font-size:1.5vw;
+}
+
+.meal-selection .meal-type .type .checkmark{
+  color: green;
+  font-size: 1.5vw;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+}
+a:hover{
+  color: orange;
+}

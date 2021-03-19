@@ -1,0 +1,172 @@
+body{
+  padding: 0px;
+  margin:0px;
+  background-color: #5b5b5b;
+  font-family: 'Indie Flower', cursive,dfkai-sb;
+}
+.default-cursor{
+  cursor: default;
+}
+#loading {
+  z-index: 1;
+  width: 90%;
+  height: 70%;
+  margin-top: 8vh;
+  padding: 10px 10px 5px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -55%);
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#runningdog {
+  margin-top: 8vh;
+}
+
+#loading img {
+  max-width: 100%;
+  text-align: center;
+
+}
+
+.loadtext {
+  display: flex;
+  margin-left: 45%;
+}
+
+.text {
+  color: white;
+  font-size: 4em;
+}
+
+.point {
+  color: white;
+  font-size: 4em;
+  margin-left: 1vw;
+}
+.navbar{
+  background-color: #ff4d40;
+}
+.navbar button{
+  background-color:inherit;
+  border:none;
+  border-radius: 5px;
+  display: none;
+  cursor: pointer;
+}
+.navbar button:hover{
+  filter: brightness(0.7);
+}
+.nav-link,.nav-brand{
+  color:#fff;
+  transition: color ease 0.5s;
+}
+.nav-brand{
+  font-size: 1.5em;
+}
+.nav-brand:hover{
+  text-decoration: none;
+  color:#6ab446;
+}
+.nav-link{
+  margin-right: 1em !important;
+}
+.nav-link:hover{
+  color:#6ab446;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.header{
+  background-image: url('../images/food-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay{
+  position: absolute;
+  height: 100%;
+  width:100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(0,0,0,0.5);
+}
+.description{
+  position: absolute;
+  left: 50%;
+  top:45%;
+  transform: translate(-50%,-55%);
+  text-align: center;
+}
+.description h1{
+  font-size: 4rem;
+  color:#6ab446;
+}
+.description p{
+  color: #fff;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+.description button{
+  margin-top: 25px;
+  font-size: 2.5rem;
+  border: 1px solid #6ab446;
+  background-color: #6ab446;
+  border-radius: 5px;
+  color: #fff;
+  opacity: 0.7;
+}
+.description button:hover{
+  border:1px solid #fff;
+  background-color:#fff;
+  color: #000;
+}
+.features{
+  margin:4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title{
+  color: #fcfcfc;
+  font-size: 4.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.features img{
+  box-shadow: 1px 1px 4px rgba(0,0,0,0.4);
+  margin-bottom: 16px;
+  width:30vw;
+  height:30vw;
+}
+.features .form-control,.features input{
+  border-radius: 0px;
+}
+.features .restraunt{
+  text-align: center;
+}
+.features .btn{
+  font-size: 3rem;
+  background-color: #ff4d40;
+  border:none;
+  color:#fff;
+  margin-top: 5px;
+}
+.features .btn:hover{
+  background-color: #fff;
+  color: #000;
+
+}
+.page-footer{
+  background-color: #272727;
+  color: #ccc;
+  padding: 60px 0 30px;
+}
+.footer-copyright{
+  color: #666;
+  padding: 40px 0;
+}

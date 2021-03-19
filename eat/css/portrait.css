@@ -1,0 +1,231 @@
+@media (orientation:portrait) {
+  .popup {
+    position: static;
+    background-color: white;
+    width: 90vw;
+    height: 85vh;
+    margin: auto;
+    border-radius: 8px;
+    cursor: default;
+  }
+
+  marquee{
+    height:3vh;
+  }
+
+  #lunch h3 {
+    font-size: calc(20px + 3.5vw);
+    text-align: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    border-bottom: 1px solid #aaa;
+  }
+
+  #lunch h2 {
+    font-size: calc(10px + 3vw);
+    margin-left: 5vw;
+  }
+
+  .swiper-container {
+    width: 80vw;
+    height: 60vh;
+  }
+
+  #lunch .meal-options .meal-option {
+    margin-left: 5vw;
+    width: 35vw;
+    height: 4vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .meal-pic {
+    width: 3.5vw;
+    height: 3.5vw;
+    margin-bottom: 0vw;
+    margin-left: 5vw;
+    padding: 0;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #red h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #white h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #green h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #black h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #curry h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #sha h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #chief h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #potato h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #red-b h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    line-height: 1.5em;
+    white-space:pre-wrap;
+  }
+
+  #white-b h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    line-height: 1em;
+    white-space: pre-wrap;
+  }
+
+  #green-b h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    line-height: 1.5em;
+   white-space:pre-wrap;
+  }
+
+  #black-b h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    line-height: 1.5em;
+   white-space:pre-wrap;
+  }
+
+  #curry-b h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    line-height: 1.5em;
+    white-space:pre-wrap;
+  }
+
+  #sha-b h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    line-height: 1em;
+    white-space: pre-wrap;
+  }
+
+  #soup h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  #desert h5 {
+    font-size: calc(8px + 1vw);
+    margin-left: 1vw;
+    white-space: pre-wrap;
+  }
+
+  .meal-selection {
+    display: flex;
+    width: 50vw;
+    height: 7vh;
+    margin-left: 20vw;
+    margin-top: 7vh;
+  }
+
+  .meal-type {
+    width: 50vw;
+    height: 7vh;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .type {
+    width: 3vw;
+    height: 2vh;
+    padding: 0px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+h4 {
+  font-size: calc(6px + 1vw);
+  margin-left: 0.5vw;
+  white-space: pre-wrap;
+}
+
+.checkmark {
+  color: white;
+  font-size: 5vw;
+}
+
+.type .checkmark {
+  color: green;
+  font-size: 5vw;
+}
+
+#submit-meal {
+  margin-top: 2vh;
+  text-align: center;
+  justify-content: center;
+}
+
+#submit-meal h2 {
+  margin-right: 1vw;
+  font-size: calc(10px + 1vw);
+}
+
+
+#submit-meal #order {
+  width: 20vw;
+  height: 3vh;
+  font-size: calc(10px + 1vw);
+  margin-right: 1vw;
+  overflow: hidden;
+  outline: none;
+  resize: none;
+}
+
+.sendpic{
+  width: 8vw;
+  height: 4vh;
+}
+
+
+
+}

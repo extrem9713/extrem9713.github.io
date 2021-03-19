@@ -1,0 +1,15 @@
+#soup {
+  width: 80vw;
+  height: 50vh;
+  background-color: #f5f5f5;
+  background-image:url('../images/soup.png');
+  background-repeat: no-repeat;
+  background-position: 70% 120%;
+
+}
+
+#soup h5{
+ font-size:calc(6px + 0.8vw);
+ margin-left: 1vw;
+ white-space:pre-wrap;
+}

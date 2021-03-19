@@ -1,0 +1,58 @@
+@media (max-width:575.98px) {
+  .navbar button{
+    display: block;
+  }
+  #loading{
+    margin-top: 10vh;
+    width: 90%;
+    height:60%;
+  }
+
+  #runningdog{
+    margin-top: 5vh;
+  }
+
+  #loading .loadtext{
+    margin-left: 25%;
+  }
+  #loading .text{
+    font-size: 2.5em;
+  }
+  #loading .point{
+    color: white;
+    font-size: 2.5em;
+    margin-left: 1vw;
+  }
+  .description{
+    left: 16%;
+    padding: 0 15px;
+    position: absolute;
+    top: 25%;
+    transform: none;
+    text-align: center;
+
+  }
+  .description h1{
+    font-size: 2rem;
+  }
+  .description p{
+    font-size: 2rem;
+  }
+  .description button{
+    margin-top: 20px;
+    font-size: 1.5rem;
+  }
+  .features{
+    margin: 0;
+  }
+  .features .restraunt{
+    text-align: left;
+  }
+  .feature-title{
+    font-size: 2rem;
+  }
+  .features .btn{
+    margin-left: 25px;
+    font-size: 1.0rem;
+  }
+}

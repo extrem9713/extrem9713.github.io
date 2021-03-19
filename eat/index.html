@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../bootstrap/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main-eat.css">
+  <link rel="stylesheet" href="css/portrait-eat.css">
+  <link rel="stylesheet" href="../css/animation-cheat-sheet.css">
+  <title>訂餐系統</title>
+</head>
+<style media="screen">
+  #gotop{
+    right:1rem;
+    bottom:1rem;
+    position: fixed;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.5rem;
+    color:#fcfcfc;
+    background-color: #ff4d40;
+  }
+  #gotop:hover{
+    filter: brightness(0.7);
+  }
+
+</style>
+
+<body>
+  <div id="loading">
+    <div id="runningdog">
+      <img src="images/runningdog.png" alt="">
+    </div>
+    <div class="loadtext">
+      <div class="text shine default-cursor">
+        walking
+      </div>
+      <div class="shaking1 point default-cursor">
+        .
+      </div>
+      <div class="shaking2 point default-cursor">
+        .
+      </div>
+      <div class="shaking1 point default-cursor">
+        .
+      </div>
+    </div>
+  </div>
+  <button type="button" id="gotop">TOP</button>
+  <nav class="navbar navbar-expand-md">
+    <a class="nav-brand" href="#">訂餐系統</a>
+    <button class="nav-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="main-navigation">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#">關於此系統</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">美味餐廳</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">飲料專區</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">留言板</a></li>
+      </ul>
+    </div>
+  </nav>
+  <header class="header page-header container-fluid">
+    <div class="overlay">
+      <div class="description">
+        <h1 class="default-cursor fadeIn">Do you hungry ?</h1>
+        <br>
+        <p class="default-cursor fadeIn">I am hungry !</p>
+        <a href="#anchor"><button class="btn btn-outline-secondary btn-lg pulse">Let's Eat !!</button></a>
+      </div>
+    </div>
+  </header>
+  <div class="container features">
+    <div class="row">
+      <a name="anchor"></a>
+      <div class="col-lg-6 col-md-6 col-sm-12 restraunt">
+        <h3 class="feature-title default-cursor">小順豐</h3>
+        <img src="images/menu01.jpg" class="img-fluid" alt="">
+        <a href="index.php"><button class="btn pulse" type="button" name="" target="_blank">GO !</button></a>
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-12 restraunt">
+        <h3 class="feature-title default-cursor">台灣第一味</h3>
+        <img src="images/menu02.png" class="img-fluid" alt="">
+        <button class="btn" type="button" name="">敬請期待 !</button>
+      </div>
+    </div>
+  </div>
+  <footer class="page-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-8 col-sm-12">
+          <h6 class="text-uppercase font-weight-bold">基本資料</h6>
+          <p>秘密</p>
+        </div>
+        <div class="col-lg-4 col-md-4 col-sm-12">
+          <h6 class="text-uppercase font-weight-bold">聯絡資訊</h6>
+          <p>不能說</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright text-center default-cursor">本網站僅為課程作業，如有需要歡迎使用</div>
+  </footer>
+  <script src="../bootstrap/jquery-3.4.1.min.js"></script>
+  <script src="../bootstrap/bootstrap/js/bootstrap.min.js"></script>
+  <script src="js/jsmain.js"></script>
+</body>
+
+</html>
