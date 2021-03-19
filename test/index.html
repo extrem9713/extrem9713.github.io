@@ -17,5 +17,13 @@
     <script async defer
   src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAmq3v-hxiZcH9tgDNfx-LVga0o043yxFE&callback=initMap">
 </script>
+<script>
+  function initMap(): void {
+  map = new google.maps.Map(document.getElementById("map") as HTMLElement, {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
+</script>
 </body>
 </html>
