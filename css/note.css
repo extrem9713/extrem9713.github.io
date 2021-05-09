@@ -1,0 +1,21 @@
+body {
+  background-color: #FFD1A4;
+  font-family: '標楷體', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+a button {
+  margin-left: 42vw;
+  margin-bottom: 2vh;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  background-color: #FFDC35;
+}
+
+a button:hover {
+  background-color: beige;
+}
