@@ -50,6 +50,7 @@ function showpersonInfo(id){
     modalname.innerText = `${data.name} ${data.surname}`
     avatar.innerHTML = `<img src="${data.avatar}" alt="" style="border-radius:5px;width:10vw">`
     gender.innerText = `gender: ${data.gender}`
+    email.innerText = `e-mail: ${data.email}`
     age.innerText = `age: ${data.age}`
     region.innerText = `region: ${data.region}`
     birthday.innerText = `birthday: ${data.birthday}`

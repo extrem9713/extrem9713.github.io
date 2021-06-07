@@ -1,7 +1,5 @@
-
-
 .card-img-top {
-   margin-top: 5vh;
+  margin-top: 5vh;
   cursor: pointer;
   max-width: 20vw;
   border-radius: 5px;
@@ -86,11 +84,12 @@ body {
   border-radius: 10px;
   box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
   z-index: 99;
-  font-size: 20px;  
+  font-size: 20px;
 
 }
+
 .opacity {
-  filter:opacity(0.8);
+  filter: opacity(0.8);
 }
 
 .navbar-nav {
@@ -123,7 +122,7 @@ body {
 .gender,
 .age,
 .region,
-.birthday {
+.email .birthday {
   font-size: 1.2vw;
 }
 
@@ -142,4 +141,3 @@ body {
 .js-back-to-top:hover {
   color: #2828FF;
 }
-
