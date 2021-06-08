@@ -10,6 +10,7 @@ const filter = document.querySelector('.filter')
 let filteredpeople = []
 const light = document.querySelector('.fa-lightbulb')
 const navbar = document.querySelector('.navbar')
+let page = 1
 //渲染朋友資料
 function showpeopleInfo(data){
   let rawhtml = ''
@@ -134,7 +135,7 @@ axios.get(indexURL)
   .then(response=>{
   people.push(...response.data.results)   
    renderPaginator(people.length)
-   showpeopleInfo(getPeopleByPage(1))
+   showpeopleInfo(getPeopleByPage(page))
 })
 //朋友資料與加到喜愛與聊天資料
 datapanel.addEventListener('click',function showpeopleid(event){
@@ -160,12 +161,12 @@ searchForm.addEventListener('submit',function onSearchFormSubmitted(event){
     alert(`您輸入的關鍵字:${keyword}沒有符合的朋友`)
   }
   renderPaginator(filteredpeople.length)  
-  showpeopleInfo(getPeopleByPage(1))
+  showpeopleInfo(getPeopleByPage(page))
 })
 
 paginator.addEventListener('click',function onPaginatorclicked(event){
   if(event.target.tagName !== 'A') return
-  const page = Number(event.target.dataset.page)
+  page = Number(event.target.dataset.page)
   showpeopleInfo(getPeopleByPage(page))
 })
 
