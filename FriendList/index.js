@@ -155,12 +155,12 @@ datapanel.addEventListener('click',function showpeopleid(event){
 searchForm.addEventListener('submit',function onSearchFormSubmitted(event){
   event.preventDefault()
   const keyword = searchInput.value.trim().toLowerCase()
-  selectedpeople = people.filter(person => person.name.toLowerCase().includes(keyword) || person.surname.toLowerCase().includes(keyword)|| person.region.toLowerCase().includes(keyword))
+  filteredpeople = people.filter(person => person.name.toLowerCase().includes(keyword) || person.surname.toLowerCase().includes(keyword)|| person.region.toLowerCase().includes(keyword))
 
-  if (selectedpeople.length === 0) {
+  if (filteredpeople.length === 0) {
     alert(`您輸入的關鍵字:${keyword}沒有符合的朋友`)
   }
-  renderPaginator(selectedpeople.length)  
+  renderPaginator(filteredpeople.length)  
   showpeopleInfo(getPeopleByPage(page))
 })
 
