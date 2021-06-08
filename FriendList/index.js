@@ -16,8 +16,8 @@ const genderselector = document.querySelector('#genderselector')
 //渲染朋友資料
 function showpeopleInfo(data){
   let rawhtml = ''
-  data.forEach((data)=>{
-    rawhtml +=` <div class="card col-6 col-sm-3" style="width: 18rem;">
+  data.forEach((data) => {
+    rawhtml += ` <div class="card col-6 col-sm-3" style="width: 18rem;">
   <img class="personinfo card-img-top" data-toggle="modal" data-target="#personinfo" data-id="${data.id}" src="${data.avatar}" alt="Card image cap">
   
   <div class="card-body">
@@ -44,8 +44,8 @@ function getPeopleByPage(page) {
 function renderPaginator(amount){
   const numberofPages = Math.ceil(amount / PEOPLE_PER_PAGE)
   let rawHTML = ''
-  for(let page = 1; page<=numberofPages; page++){
-      rawHTML +=`<li class="page-item"><a class="page-link" href="#" data-page = ${page}>${page}</a></li>`      
+  for(let page = 1; page <= numberofPages; page++){
+      rawHTML += `<li class="page-item"><a class="page-link" href="#" data-page = ${page}>${page}</a></li>`      
   }
   paginator.innerHTML = rawHTML
 }
@@ -77,12 +77,10 @@ function showpersonchat(id){
  const avatar = document.querySelector('.chatavatar')
  const modalname = document.querySelector('#modal-chat-title') 
   axios.get(indexURL + id)
-  .then(response => {
-    
-    
+  .then(response => {   
     const data = response.data
     avatar.innerHTML = `<img src="${data.avatar}" alt="" class="chat-avatar"></i>`
-     modalname.innerText = `${data.name}'s Chat`
+    modalname.innerText = `${data.name}'s Chat`
   })
   .catch(err => {
     console.error(err); 
@@ -93,12 +91,12 @@ function showpersonchat(id){
 function addToFavorite(id){
   const list = JSON.parse(localStorage.getItem('favoriteFriends')) || []
   const friend = people.find((friend) => friend.id === id)
-   if(!list.some((friend) => friend.id === id)){
+   if (!list.some((friend) => friend.id === id)) {
     list.push(friend)
     localStorage.setItem('favoriteFriends', JSON.stringify(list))
     return alert('朋友加入成功!')
   } 
-  else if(list.some((friend) => friend.id === id)){
+  else if (list.some((friend) => friend.id === id)) {
     return alert('此朋友已在收藏清單中')
   }  
 }
@@ -141,11 +139,11 @@ axios.get(indexURL)
 })
 //朋友資料與加到喜愛與聊天資料
 datapanel.addEventListener('click',function showpeopleid(event){
-  if(event.target.matches('.personinfo') ||event.target.matches('.fa-info-circle')){    
+  if (event.target.matches('.personinfo') ||event.target.matches('.fa-info-circle')) {    
     showpersonInfo(Number(event.target.dataset.id))
-  }else if(event.target.matches('.btn-add-favorite')){
+  } else if (event.target.matches('.btn-add-favorite')){
     addToFavorite(Number(event.target.dataset.id))
-  }else if(event.target.matches('.chat')){    
+  } else if (event.target.matches('.chat')){    
     showpersonchat(Number(event.target.dataset.id))
     lightordark()
     
@@ -157,17 +155,17 @@ datapanel.addEventListener('click',function showpeopleid(event){
 searchForm.addEventListener('submit',function onSearchFormSubmitted(event){
   event.preventDefault()
   const keyword = searchInput.value.trim().toLowerCase()
-  filteredpeople = people.filter(person => person.name.toLowerCase().includes(keyword) || person.surname.toLowerCase().includes(keyword)|| person.region.toLowerCase().includes(keyword))
+  selectedpeople = people.filter(person => person.name.toLowerCase().includes(keyword) || person.surname.toLowerCase().includes(keyword)|| person.region.toLowerCase().includes(keyword))
 
-  if(filteredpeople.length === 0){
+  if (selectedpeople.length === 0) {
     alert(`您輸入的關鍵字:${keyword}沒有符合的朋友`)
   }
-  renderPaginator(filteredpeople.length)  
+  renderPaginator(selectedpeople.length)  
   showpeopleInfo(getPeopleByPage(page))
 })
 
 paginator.addEventListener('click',function onPaginatorclicked(event){
-  if(event.target.tagName !== 'A') return
+  if (event.target.tagName !== 'A') return
   page = Number(event.target.dataset.page)
   showpeopleInfo(getPeopleByPage(page))
 })
@@ -175,24 +173,23 @@ paginator.addEventListener('click',function onPaginatorclicked(event){
 document.addEventListener('scroll',function onpagescroll(){
   const navbarheight = 200
   const distanceFromTop = Math.abs(document.body.getBoundingClientRect().top)
-  if (distanceFromTop >= navbarheight){
+  if (distanceFromTop >= navbarheight) {
     navbar.classList.add('opacity')
       }else{navbar.classList.remove('opacity')}  
 }) 
 
-genderselector.addEventListener('click',function genderselect(event){
-  console.log(event.target.innerText)
-  if(event.target.innerText ==='female'){
+genderselector.addEventListener('click',function genderselect(event){  
+  if (event.target.matches('.female')) {
     filteredpeople = people.filter(person => person.gender==='female')
   renderPaginator(filteredpeople.length)  
   showpeopleInfo(getPeopleByPage(page))
   }
-  else if(event.target.innerText ==='male'){
+  else if (event.target.matches('.male')) {
     filteredpeople = people.filter(person => person.gender==='male')
   renderPaginator(filteredpeople.length)  
   showpeopleInfo(getPeopleByPage(page))
   }
-  else if(event.target.innerText ==='all'){
+  else if (event.target.matches('.all')) {
     filteredpeople = people
   renderPaginator(filteredpeople.length)  
   showpeopleInfo(getPeopleByPage(page))

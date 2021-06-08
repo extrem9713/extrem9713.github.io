@@ -10,7 +10,7 @@ const navbar = document.querySelector('.navbar')
 function showpeopleInfo(data){
   let rawhtml = ''
   data.forEach(data=>{
-    rawhtml +=` <div class="card col-6 col-sm-3" style="width: 18rem;">
+    rawhtml += ` <div class="card col-6 col-sm-3" style="width: 18rem;">
   <img class="personinfo card-img-top" data-toggle="modal" data-target="#personinfo" data-id="${data.id}" src="${data.avatar}" alt="Card image cap">
   
   <div class="card-body">
@@ -27,9 +27,9 @@ function showpeopleInfo(data){
 }
 //刪除喜愛朋友
 function removeFromFavorite(id){
-  if(!people) return
+  if (!people) return
   const personIndex = people.findIndex((friend)=>friend.id === id)
-  if(personIndex === -1) return
+  if (personIndex === -1) return
   people.splice(personIndex, 1)
   localStorage.setItem('favoriteFriends',JSON.stringify(people))
   showpeopleInfo(people)
@@ -91,19 +91,19 @@ function lightordark(){
 
 //朋友資料與加到喜愛與聊天資料
 datapanel.addEventListener('click', function onPanelClick(event){
-  if(event.target.matches('.personinfo') || event.target.matches('.fa-info-circle')){
+  if (event.target.matches('.personinfo') || event.target.matches('.fa-info-circle')) {
     showpersonInfo(Number(event.target.dataset.id))
     console.log(event.target.dataset.id)
-  }else if(event.target.matches('.btn-remove-favorite')){
+  } else if (event.target.matches('.btn-remove-favorite')) {
     removeFromFavorite(Number(event.target.dataset.id))
-  }else if(event.target.matches('.chat')){
+  } else if (event.target.matches('.chat')) {
     console.log(event.target.dataset.id)
     showpersonchat(Number(event.target.dataset.id))
     lightordark()
 }
 })
 
-document.addEventListener('scroll',function onpagescroll(){
+document.addEventListener('scroll',function onpagescroll () {
   const navbarheight = 200
   const distanceFromTop = Math.abs(document.body.getBoundingClientRect().top)
   if (distanceFromTop >= navbarheight){
