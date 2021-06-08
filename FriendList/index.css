@@ -127,7 +127,34 @@ body {
   font-size: 1.2vw;
 }
 
+#genderselector {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.select-all,
+.select-male,
+.select-female {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.all {
+  color: green;
+}
+
+.male {
+  color: blue;
+}
+
+.female {
+  color: red;
+}
 
 .js-back-to-top {
   display: none;

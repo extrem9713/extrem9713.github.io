@@ -11,6 +11,8 @@ let filteredpeople = []
 const light = document.querySelector('.fa-lightbulb')
 const navbar = document.querySelector('.navbar')
 let page = 1
+const genderselector = document.querySelector('#genderselector')
+
 //渲染朋友資料
 function showpeopleInfo(data){
   let rawhtml = ''
@@ -177,3 +179,23 @@ document.addEventListener('scroll',function onpagescroll(){
     navbar.classList.add('opacity')
       }else{navbar.classList.remove('opacity')}  
 }) 
+
+genderselector.addEventListener('click',function genderselect(event){
+  console.log(event.target.innerText)
+  if(event.target.innerText ==='female'){
+    filteredpeople = people.filter(person => person.gender==='female')
+  renderPaginator(filteredpeople.length)  
+  showpeopleInfo(getPeopleByPage(page))
+  }
+  else if(event.target.innerText ==='male'){
+    filteredpeople = people.filter(person => person.gender==='male')
+  renderPaginator(filteredpeople.length)  
+  showpeopleInfo(getPeopleByPage(page))
+  }
+  else if(event.target.innerText ==='all'){
+    filteredpeople = people
+  renderPaginator(filteredpeople.length)  
+  showpeopleInfo(getPeopleByPage(page))
+  }
+    
+})
