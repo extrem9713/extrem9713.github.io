@@ -144,17 +144,12 @@ body {
   cursor: pointer;
 }
 
-.all {
-  color: green;
-}
-
+.all,
+.female,
 .male {
-  color: blue;
+  color: white;
 }
 
-.female {
-  color: red;
-}
 
 .js-back-to-top {
   display: none;

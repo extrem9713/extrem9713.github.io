@@ -15,7 +15,7 @@ const genderselector = document.querySelector('#genderselector')
 
 //渲染朋友資料
 function showpeopleInfo(data){
-  let rawhtml = ''
+  let rawhtml=''
   data.forEach((data) => {
     rawhtml += ` <div class="card col-6 col-sm-3" style="width: 18rem;">
   <img class="personinfo card-img-top" data-toggle="modal" data-target="#personinfo" data-id="${data.id}" src="${data.avatar}" alt="Card image cap">
@@ -179,17 +179,18 @@ document.addEventListener('scroll',function onpagescroll(){
 }) 
 
 genderselector.addEventListener('click',function genderselect(event){  
-  if (event.target.matches('.female')) {
-    filteredpeople = people.filter(person => person.gender==='female')
+  if (event.target.matches('.select-female') || event.target.matches('.female') || event.target.matches('.fa-female')) {
+    filteredpeople = people.filter(person => person.gender==='female')        
   renderPaginator(filteredpeople.length)  
   showpeopleInfo(getPeopleByPage(page))
   }
-  else if (event.target.matches('.male')) {
+  else if (event.target.matches('.select-male') || event.target.matches('.male') || event.target.matches('.fa-male')) {
     filteredpeople = people.filter(person => person.gender==='male')
+        
   renderPaginator(filteredpeople.length)  
   showpeopleInfo(getPeopleByPage(page))
   }
-  else if (event.target.matches('.all')) {
+  else if (event.target.matches('.select-all') || event.target.matches('.all') || event.target.matches('.fa-user')) {        
     filteredpeople = people
   renderPaginator(filteredpeople.length)  
   showpeopleInfo(getPeopleByPage(page))
