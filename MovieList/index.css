@@ -1,0 +1,18 @@
+#search-form {
+  margin-left: 40vw;
+  margin-right: 40vw;
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+#search-input {
+  width: 30vw;
+}
+
+#movie-modal-image {
+  max-width: 25vw;
+}
+
+#movie-modal-dateanddescription {
+  margin-left: 5vw;
+}
