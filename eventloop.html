@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/eventloop.css">
+  <title>Event Loop</title>
+</head>
+<body>
+  <h1>Event Loop 事件循環</h1>
+  <img src="images/eventloop.gif" alt="">
+  <h2>一次只能執行一件事!</h2>
+  <pre>  JavaScript被設計為單線程(single threaded runtime)，也就是一次只能執行一條程式碼，由上往下逐行執行。</pre>
+  <br>
+  <h2>如何執行?</h2>
+  <pre>  JavaScript是以「後進先出」執行堆疊（call stack）。而執行堆疊（call stack）也可以理解為是「執行當下的紀錄」</pre>
+  <br>
+  <pre>  當開始執行程式，會從全域（Global Scope）的主程式（main program）開始執行，當進入某一個函式，便會把這個函式推（push）至執行堆疊（stack）
+  的最上方，以此類推往上疊加並由最上層（也就是最後進入的）開始執行，而當該函式執行結束（return），便會將此函式從原本的最上層抽離（pop off），以此類推。</pre>
+  <br>
+  <h2>如果是無窮迴圈?</h2>
+  <pre>  那麼這個堆疊（Stack）將會不斷被疊加上去，直到瀏覽器出現錯誤</pre>
+  <br>
+  <h2>如果等太久?</h2>
+  <pre>  如果瀏覽器「一次只執行一件事」，那麼當執行程式碼的片段需要等待回應時，全世界就必須「跟著等」，也就不能做其他行為（例如點擊等任何動作），
+  而這樣類似畫面被「卡住」的現象，就稱做阻塞（blocking）</pre>
+  <br>
+  <h2>如何解決阻塞?</h2>
+  <pre>  為了要解決阻塞的問題，我們可以透過非同步（Asynchronous）的方式處理</pre>
+  <br>
+  <h2>同步 V.S. 非同步</h2>
+  <pre>  同步處理：效率較耗時，但有利於流程的控制
+  非同步處理：雖然執行效率高、節省時間，但也相對佔據更多的資源，相對同步流程而言，較不利於進行流程的控制。</pre>
+  <br>
+  <h2>所以什麼是事件循環?</h2>
+  <pre>  簡而言之，Event Loop本質上就是一個 user agent（此為瀏覽器）上協調各種事件的機制，而既然有「協調」就一定有執行順序的判定，也就一定伴隨著「監控行為」的概念。
+  以圖示來理解Event Loop的運行過程：</pre>
+  <img src="images/eventloop2.png" alt="">
+  <h3>Call stack ─ 執行堆疊</h3>
+  <pre>  JavaScript會以後進先出方式執行堆疊。當開始執行程式，會從全域的主程式開始，逐一把各個函式推進執行堆疊的最上方，
+    並由最上層（也就是最後進入的）開始執行，而當該函式結束後，會將此函式抽離堆疊（pop off）。</pre>
+  <br>
+  <h3>Web APIs ─ 判斷資格是否符合</h3>
+  <pre>  當Web APIs的條件被滿足時，會將等待執行任務推進至 工作佇列（Callback Queue）等候執行。</pre>
+  <br>
+  <h3>Callback Queue ─ 先來先執行</h3>
+  <pre>  接收從Web APIs傳來等候被執行的任務，以先進先出的方式，透過 Event Loop 的監控，當執行堆疊（call back）裡清空時，才傳入佇列（queue）內容中依先進先出排序的任務。</pre>
+  <br>
+  <h2>結論</h2>
+  <pre>簡而言之，事件循環的作用就是擔任執行堆疊與工作佇列間的任務分配員，當執行堆疊是空的，就將工作佇列內等候被執行的任務依序推進去。</pre>
+
+  <h4>參考來源</h4>
+  <div class="reference">
+    <a href="https://pjchender.blogspot.com/2017/08/javascript-learn-event-loop-stack-queue.html">[筆記] 理解 JavaScript 中的事件循環、堆疊、佇列和併發模式（Learn event loop, stack, queue, and concurrency mode of JavaScript in depth）</a>
+    <a href="https://emilywalkdone.blogspot.com/2021/01/JavaScript-EVENT-LOOP.html">【JavaScript筆記】所以事件循環Event Loop到底是什麼？setTimeout 0 的藝術 ─ 我OK、你先請？</a>
+  </div>
+  
+</body>
+</html>
