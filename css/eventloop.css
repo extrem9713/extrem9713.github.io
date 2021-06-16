@@ -1,0 +1,26 @@
+img {
+  margin-left: 20vw;
+}
+
+a {
+  text-decoration: none;
+}
+
+.reference {
+  display: flex;
+  flex-direction: column;
+}
+
+pre {
+  font-size: 1.2em;
+}
+
+body,
+pre {
+  background-color: #FFD1A4;
+  font-family: '標楷體', sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
