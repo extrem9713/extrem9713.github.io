@@ -11,12 +11,13 @@ a {
   flex-direction: column;
 }
 
-pre {
+p {
   font-size: 1.2em;
+  font-family: '標楷體',
+    sans-serif;
 }
 
-body,
-pre {
+body {
   background-color: #FFD1A4;
   font-family: '標楷體', sans-serif;
 }
