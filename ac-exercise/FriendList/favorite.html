@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://www.seekpng.com/png/full/85-857619_drawing-lyrics-real-friends-real-friends-logo.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+  <title>Favorite Friend</title>
+</head>
+<body>
+  <nav class="navbar navbar-light">
+  <a href="index.html" class="navbar-brand mb-0 h1">Meet Friend</a>
+<ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ml-3" href="favorite.html">Favorite</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link active ml-3" data-toggle="modal" data-target="#singnin-sheet" style="cursor: pointer;">sign in</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active ml-3" data-toggle="modal" data-target="#singnup-sheet" style="cursor: pointer;">sign up</a>
+          </li>
+        </ul>
+      </div>
+</nav>
+        
+<div class="container">
+  <div class="row" id="data-panel">
+
+</div>
+</div>
+  
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="personinfo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog"  role="document">
+    <div class="modal-content" style="width: 45vw;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="left col-sm-6">
+            <div class="avatar"></div>
+          </div>
+          <div class="right col-sm-6">            
+            <div class="email"></div>
+            <div class="gender"></div>
+            <div class="age"></div>
+            <div class="region"></div>
+            <div class="birthday"></div>
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- chat Modal -->
+<div class="modal fade" id="personchat" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-chat-title">Chat</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="left col-sm-3">
+            <div class="chatavatar"></div>
+            <i class="fas fa-lightbulb"></i>
+          </div>
+          <div class="chat col-sm-9">           
+            <input class="form-control" type="text" placeholder="say hello to your friend!">
+            <i class="fas fa-arrow-circle-right ml-1"></i>
+            
+          </div>
+        </div>
+        
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signin Modal -->
+<div class="modal fade" id="singnin-sheet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Singn In</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="signup-sheet-style">
+       <div>
+       <p class="mt-2 ml-1">User name:</p>
+       <input type="text" placeholder="User-name" class="form-control ml-1" style="width:20vw;">
+       </div>
+       <div>
+       <p class="mt-2 ml-1">password:</p>
+       <input type="password" placeholder="password" class="form-control ml-1" style="width:20vw;">
+       </div>
+       <hr>
+       <button type="submit" class="btn btn-primary ml-1 mb-2">submit</button>
+      </form>
+        
+      </div>
+      <div class="modal-footer">
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- signup Modal -->
+<div class="modal fade" id="singnup-sheet" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="height:95vh">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal-title">Singn Up</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <form class="signup-sheet-style">
+       <div>
+       <p class="mt-2 ml-1">User name:</p>
+       <input type="text" placeholder="User-name" class="form-control ml-1" style="width:20vw;">
+       </div>
+       <div>
+       <p class="mt-2 ml-1">Password:</p>
+       <input type="password" placeholder="password" class="form-control ml-1" style="width:20vw;">
+       </div>       
+       <div>
+       <p class="mt-2 ml-1">E-mail:</p>
+       <input type="email" placeholder="please enter your e-mail" class="form-control ml-1" style="width:20vw;">
+       </div>
+       <div>
+       <p class="mt-2 ml-1">Living contry:</p>
+       <input list= country class="form-control ml-1" style="width:20vw;">
+       <datalist id="country">
+        <option value="DE">
+        <option value="CH">
+        <option value="CA">
+        <option value="US">
+        <option value="AU">
+        <option value="CH">
+        <option value="GB">
+        <option value="IE">
+        <option value="NZ">
+        <option value="FR">
+        <option value="ES">        
+      </datalist>
+       </div>
+        <div>
+       <p class="mt-2 ml-1">Gender:</p>
+         <input type="radio" id="male" class="ml-1" name="gender" value="male">
+         <label for="male">male</label>
+         <input type="radio" id="female" class="ml-1" name="gender" value="female">
+         <label for="female">female</label>
+         <input type="radio" id="other" class="ml-1" name="gender" value="other">
+         <label for="female">other</label>
+       </div>
+       <div>
+       <p class="mt-2 ml-1">Age:</p>
+       <input type="text" placeholder="your age" class="form-control ml-1" style="width:20vw;">
+       </div>
+        <div>
+       <p class="mt-2 ml-1">Birthday:</p>
+       <input type="date" value="1992-01-01" class="form-control ml-1" style="width:20vw;">
+       </div>
+       <hr>
+       <button type="submit" class="btn btn-primary ml-1  mb-2">Singn Up</button>
+      </form>
+        
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<i class="fas fa-arrow-circle-up js-back-to-top"></i>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src="favorite.js"></script>
+</body>
+</html>

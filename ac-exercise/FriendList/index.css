@@ -1,0 +1,166 @@
+.card-img-top {
+  margin-top: 5vh;
+  cursor: pointer;
+  max-width: 20vw;
+  border-radius: 5px;
+}
+
+.fa-plus-circle {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.fa-comment-dots {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.fa-info-circle {
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.fa-info-circle:hover {
+  color: #1AFD9C;
+  transform: scale(1.2);
+}
+
+.fa-comment-dots:hover {
+  color: #2894FF;
+  transform: scale(1.2);
+}
+
+.fa-times-circle {
+  font-size: 2vw;
+  color: #FF2D2D;
+  cursor: pointer;
+}
+
+.fa-arrow-circle-right {
+  font-size: 2vw;
+  color: #4A4AFF;
+}
+
+
+
+.fa-plus-circle:hover {
+  color: #FF0080;
+  transform: scale(1.2);
+}
+
+.fa-times-circle:hover {
+  transform: scale(1.2);
+}
+
+.fa-lightbulb {
+
+  font-size: 2vw;
+  position: relative;
+  left: 58px;
+  top: -95px;
+}
+
+.fa-arrow-circle-right {
+  cursor: pointer;
+}
+
+.light {
+  color: #46A3FF;
+}
+
+.dark {
+  color: black;
+}
+
+body {
+  background-color: #DDDDFF;
+  cursor: default;
+}
+
+.navbar {
+  background-color: #97CBFF;
+  position: fixed;
+  width: 100vw;
+  border-radius: 10px;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+  z-index: 99;
+  font-size: 20px;
+
+}
+
+.opacity {
+  filter: opacity(0.8);
+}
+
+.navbar-nav {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.buttons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  justify-content: space-around;
+}
+
+.chat {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.chat-avatar {
+  width: 5vw;
+  border-radius: 50%;
+}
+
+
+.gender,
+.age,
+.region,
+.email,
+.birthday {
+  font-size: 1.2vw;
+}
+
+#genderselector {
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select-all,
+.select-male,
+.select-female {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  cursor: pointer;
+}
+
+.all,
+.female,
+.male {
+  color: white;
+}
+
+
+.js-back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  margin-left: 95vw;
+  font-size: 2vw;
+  z-index: 99;
+}
+
+.js-back-to-top:hover {
+  color: #2828FF;
+}
