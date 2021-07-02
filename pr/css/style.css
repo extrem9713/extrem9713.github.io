@@ -19,7 +19,7 @@ body {
 	overflow-x: hidden;
 	cursor: default;
 	background: url("../images/intro.jpg");
-	color: white;
+	: white;
 	background-size: cover;
 }
 
@@ -27,6 +27,7 @@ p {
 	font-family: '標楷體', 'Mansalva', cursive, "Proxima Nova Light", 'Helvetica Neue', Arial, Helvetica, sans-serif;
 	font-size: 2vw;
 	margin: 0 0 20px 0;
+	color: white;
 }
 
 ul,
