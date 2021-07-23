@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/note2-3.css">
+  <title>自學經驗</title>
+</head>
+<p>
+  <h1 class="">自學經驗</h1>
+  <img src="images/error1.png" alt="heroku error" class="center">
+  <p>這個是我在老爸私房錢上傳heroku時所遇到問題，後來將error: src refspec master does not match any
+    這段話上網google，得到的答案是:
+</p>
+<center>
+<img src="images/error2.png" alt="search error">
+</center>
+<p>但是根據其操作還是無法上傳</p>
+<center>
+<img src="images/error3.png" alt="error">
+</center>
+<p>況且我也確定資料夾內已有資料，而且都有進行commit，不經認為是我搜尋的答案有問題</p>
+<p>後來看到slack有人跟我有相同的問題時，才找到正確的解法</p>
+<center>
+  <img src="images/error4.png" alt="ans">
+</center>
+<p>原來只是目錄名稱的不同，只要把 git push heroku master 改為 git push heroku main就能正確執行</p>
+<center>
+  <img src="images/error5.png" alt="">
+</center>
+<h1>感想</h1>
+<p>即使只是個小問題，也讓我卡關半天，自行google也找錯了方向，運氣好看到slack上也有人跟我也相通問題才解決，會犯這個錯誤的原因，我歸咎於自己還是對後端運作機制沒有相當熟悉，只看著教案進行實作，才會產生這個問題。問題本身就是目錄的名稱不同所致，但是自己都沒有察覺到，表示自記對於終端機上的內容其實也不適相當清楚，看來自己還需要再多加努力，才能更加了解後多。</p>  
+</body>
+</html>
