@@ -1,0 +1,186 @@
+body{
+  margin:0;
+  padding:0;
+  background: linear-gradient(#000,#111);
+}
+.navbar{
+  background-color: #70b;
+}
+.navbar-brand{
+  color:#f3f3f3;
+  font-size: 1.3em;
+  font-weight: 700;
+}
+.navbar-brand:hover{
+  color: #a00;
+}
+.navbar-collapse{
+  justify-content: flex-end;
+}
+.nav-link{
+  margin-right: 1em !important;
+}
+.nav-link{
+  background-color: inherit;
+  border-radius: 30px 0 30px 0;
+  color: #0f0;
+  font-weight: bolder;
+}
+.nav-link:hover{
+  background-color: #f3f3f3;
+  color: #333;
+}
+.header{
+  background-image: url('../images/eye.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.overlay{
+  min-width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0,0,0,0.5);
+}
+.default-cursor{
+  cursor: default;
+}
+#pupil{
+  min-width: 340px;
+  max-height: 250px;
+  opacity: 0.5;
+  left: 49.5%;
+  position: absolute;
+  top: 42%;
+  transform: translate(-44%,-30%);
+  z-index: 1;
+}
+
+.flash{
+  animation-name: flash;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+
+.planet1{
+  width: 7em;
+  left: 40%;
+  top:5%;
+  position: absolute;
+  filter: brightness(0.6);
+}
+.planet2{
+  width: 4.5em;
+  right: 40%;
+  bottom:5%;
+  position: absolute;
+  filter: invert(1);
+}
+
+
+.spin{
+  animation-name: spin;
+  animation-duration: 9s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  transform-origin:8vw 42vh ;
+}
+.spin-r{
+  animation-name: spin;
+  animation-duration: 12s;
+  animation-timing-function: linear;
+  animation-direction: reverse;
+  animation-iteration-count: infinite;
+  transform-origin:-6vw -38vh ;
+}
+
+@keyframes flash {
+
+  0%{
+    opacity: 0.3;
+  }
+  50%{
+    opacity: 0.7;
+  }
+  100%{
+    opacity: 0.3;
+  }
+}
+
+@keyframes spin {
+  to{
+  transform: rotate(1turn);
+  }
+}
+
+
+
+.description button {
+  font-size: 2rem;
+  border:1px solid #3a0088;
+  background:#3a0088;
+  border-radius: 20px;
+  color:#d3d3d3;
+  left: 47.5%;
+  position: absolute;
+  top: 68%;
+}
+.description button:hover {
+  border:1px solid #fff;
+  background:#fff;
+  color:#000;
+}
+
+.features{
+  margin: 4em auto;
+  padding: 1em;
+  position: relative;
+}
+.feature-title{
+  font-size: 2em;
+  color: #d3d3d3;
+  text-align: center;
+  background-color: #3a0088;
+  border-radius: 15px 15px 0 0;
+}
+
+.features img{
+  filter: grayscale(0.5);
+  width: 350px;
+  height: 270px;
+  border-radius: 8px;
+ box-shadow: 4px 4px 25px 7px #880000;
+
+}
+.features img:hover{
+  filter: invert(80%) blur(3px);
+
+}
+.buy{
+  margin-top: 10px;
+  font-size: 1.5em;
+}
+
+.page-footer{
+  background-color: #222;
+}
+.footer-copyright{
+  font-size: 2em;
+  color: #d3d3d3;
+  padding: 20px 0;
+}
+.btn-purple{
+  color: #fff;
+  background-color: #8968CD;
+  border:none;
+  transition: font-size 1s ease;
+
+}
+.btn-purple:hover{
+  font-size: 1.8em;
+  color: #fff;
+  background-color: #5D478B;
+}
