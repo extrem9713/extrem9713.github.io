@@ -1,0 +1,61 @@
+@charset "utf-8";
+/* CSS Document */
+.con-bg{
+	background: linear-gradient(#166eb7,white);
+}
+.con{
+	margin-bottom: 10vh;
+}
+.r{
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+.cancel{
+	width: 1.5vw;
+}
+.t-title{
+	font-family: "微軟正黑體";
+	font-size: 3vw;
+	color: white;
+}
+.member{
+	background: #c4e1ff;
+	width: 80%;
+	margin-left: 10%;
+	margin-bottom: 10vh;
+	border-radius: 10px;
+}
+
+.form-control-m {
+	margin-left: 20%;
+  display: block;
+  width: 60%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: black;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.m-title{
+	font-size:1.5vw;
+	font-weight: bolder;
+	margin-top:2vw;
+	margin-bottom: 0;
+	font-family: '微軟正黑體';
+}
+.btn-p{
+	margin-bottom: 5vh;
+	border: none;
+	
+}
+.check-p{
+	margin-top: 2vh;
+}
+.m-t{
+	font-family: "微軟正黑體";
+		margin-top: 1.5vh;
+}

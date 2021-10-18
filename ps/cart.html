@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>購物車</title>
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/cart.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+	<nav class="navbar navbar-expand-lg navbar-dark bg-night "><img src="images/logo.png" width="20%">
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent1" aria-controls="navbarSupportedContent1" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+    <ul class="navbar-nav mr-auto" id="menu-bar">
+      <li class="nav-item"><a class="nav-link nav-link-r" href="index.html" target="_top"><img src="images/top.png"><span class="sr-only" >(current)</span></a> </li>
+      <li class="nav-item"><a class="nav-link nav-link-r" href="about.html"><img src="images/about.png"></a> </li>
+      <li class="nav-item"><a class="nav-link nav-link-r" href="cake.html"><img src="images/cake.png"></a></li>
+      <li class="nav-item"><a class="nav-link nav-link-r" href="#"><img src="images/box.png"></a></li>
+      <li class="nav-item"><a class="nav-link nav-link-r" href="#"><img src="images/bread.png"></a></li>
+      <li class="nav-item"><a class="nav-link nav-link-r" href="#"><img src="images/shoping.png"></a></li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <img src="images/bee.png"  id="search-bee">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn form-control" type="submit"><img id="search-icon" src="images/search.png"></button>
+    </form>
+  </div>	
+</nav>
+	<div class="container-fluid con con-bg">
+		<div class="row r">			
+		<table class="table text-center">		
+			<thead>
+				<tr>
+				<h3 class="t-title">訂購商品</h3>
+				</tr>
+			<tr class="table-primary">
+				<th scope="col">商品名稱</th>
+				<th scope="col">規格</th>
+				<th scope="col">數量</th>
+				<th scope="col">價格</th>
+				<th scope="col">小計</th>
+				<th scope="col">取消</th>
+			</tr>			
+			</thead>
+			<tbody>
+			<tr>
+			<td>鮮芒夏洛特
+				<img src="images/pr1.jpg" class="pr"></td>
+			<td>7吋</td>
+			<td>1</td>
+			<td>NT:820</td>
+			<td>NT:820</td>
+			<td><img class="cancel" src="images/cancel.png"></td>
+			</tr>
+			<tr class="table-primary">
+			<td>總計</td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td>NT:820</td>
+			<td></td>
+			</tr>
+			</tbody>
+		</table>
+			<button class="btn btn-danger keepbuy">繼續購物</button>			
+		</div>
+		<br>
+		<div class="container-fluid">
+			<div class=" r text-center">
+			<h3 class="t-title">會員登入</h3>
+			  <form>
+				  <div class="member">
+				<p class="m-title">使用者名稱</p>
+				<input type="text" class="form-control">
+				<p class="m-title">密碼</p>
+				<input type="password" class="form-control">
+				<br>
+				  <div class="row justify-content-center">
+					  <div class="col-md-2">
+				<button type="submit" class="btn-lg btn-primary btn-p">login</button>
+					 </div>
+					  <div class="col-md-2">
+				  <input type="checkbox" class="form-check-input check-p" id="check">
+				 <label class="form-check-label m-t" for="check">保持登入</label>
+					</div>
+				</div>
+					  </div>
+				</form>
+			</div>
+	</div>
+		</div>
+	<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script> 
+<script src="js/wow.js"></script> 
+<script src="js/main.js"></script>
+</body>
+</html>

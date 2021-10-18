@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+.bg-night{
+	background:linear-gradient(#0f5087,#166eb7);
+}
+.con-bg{
+	background: linear-gradient(#166eb7,white);
+}
+.con{
+	margin-bottom: 10vh;
+}
+.card{
+	background: #FFF0F5;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px 5px rgba(2,2,2,0.2);
+	color: black;
+	font-family: 'ngaan';
+	font-size: 1.1vw;
+	margin-top: 5vh;
+	margin-left: 1vw;
+}
+.card-title{
+	font-size:2vw;
+}
+.card .card-img-top{
+	margin-top: 2vw;
+	border-radius: 5px;
+	background: white;
+	width: 15vw;
+	height: 30vh;
+}
+.card-text{
+	height: 20vh;
+}
+.btn{
+	font-size:1vw;
+}
+@media (orientation:portrait){
+	.card .card-img-top{
+		width: 30vw;
+		height: 15vh;
+	}
+	.card{		
+		font-size: 2vw;
+		margin-top: 5vh;
+		margin-left: 1vw;
+	}
+	.card-title{
+		font-size:3.5vw;
+	}
+	.card-text{
+		height: 15vh;
+	}
+	.btn{
+		font-size:2vw;
+	}
+
+}

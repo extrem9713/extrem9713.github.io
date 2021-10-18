@@ -1,0 +1,117 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face{
+	font-family: 'candy';
+	src: url('../font/HanyiSenty-candy.ttf');
+}
+@font-face{
+	font-family: 'ngaan';
+	src: url('../font/ngaan.ttf');
+}
+#search-bee{
+	width:3.5%;
+	position: absolute;
+	top:5vh;
+	right: 13vw;
+	transform: rotate(-20deg);
+}
+
+#logo{
+	padding:0;
+}
+
+.navbar .btn{
+	border:inherit;
+	background-color:inherit;
+}
+
+#search-icon{
+	max-width:100%;
+	
+}
+
+#search-icon:hover{
+	filter: brightness(0.8);
+}
+
+#menu-bar{
+	margin-left:5vw;	
+}
+
+.bg-night{
+	background:linear-gradient(#0f5087,#166eb7);
+}
+#gotop img{
+    right:0;
+    bottom:20vh;
+    position: fixed;
+	width: 5vw;
+    z-index:10;
+	opacity: 0.5;
+  }
+  #gotop img:hover{
+    transform: rotate(-10deg);
+  }
+.pointer-cursor{
+	cursor: pointer;
+}
+
+.nav-item{
+	width:7vw;
+	margin-left: 0vw;
+}
+.nav-item a img{
+	width: 85%;
+}
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+.nav-link-r:hover{
+	filter: brightness(1.2);
+	transform: rotate(-10deg);
+}
+.cart-content{
+	background: #b5d1e8;
+}
+.c-title{
+	color: white;
+	font-size: 2vw;
+	margin-left: auto;
+	margin-right: auto;
+}
+.minus-item{	
+	height: 50%;
+	margin-right: 1vw;
+	margin-top: 1.2vh;
+	text-align: center;
+	
+	
+}
+.plus-item{
+	
+	height: 50%;
+	margin-left: 1vw;
+	margin-top: 1.2vh;
+	text-align: center;	
+}
+.item-count{
+	width: 3vw;
+}
+.delete-item{
+	
+	height: 50%;
+	margin-left: 1vw;
+	margin-top: -0.1vh;
+	text-align: center;	
+}
+td{
+	font-size: 2vw;
+}
+.price{
+	font-size: 1.5vw;
+	color: red;
+	font-weight: bolder;
+}
+
